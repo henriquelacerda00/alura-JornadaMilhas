@@ -24,8 +24,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
       alert(
         'Back-End hospedado na fly.io com serviço gratuito, aguarde de 2-5 segundos para inicializar o serviço.'
       );
-    }, 200); // 200ms é suficiente para permitir a renderização
+    }, 500); // 200ms é suficiente para permitir a renderização
   }
+
   navegarParaBusca(ev: any) {
     this.router.navigate(['busca']);
   }

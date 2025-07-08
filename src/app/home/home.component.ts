@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PromocaoService } from 'src/app/home/services/promocao.service';
 
@@ -7,13 +7,14 @@ import { PromocaoService } from 'src/app/home/services/promocao.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit , AfterViewInit {
   constructor(
     private servicoPromocao: PromocaoService,
     private router: Router
   ) {
 
   }
+
   ngOnInit(): void {
     this.servicoPromocao.listar()
       .subscribe(
@@ -21,8 +22,12 @@ export class HomeComponent implements OnInit {
           console.log(resposta)
         }
       )
+  }
+
+  ngAfterViewInit(): void {
     alert('Back-End hospedado na fly.io com serviço gratuito, aguarde de 2-5 segundos para inicializar o serviço.')
   }
+
   navegarParaBusca(ev: any) {
     this.router.navigate(['busca']);
   }

@@ -15,13 +15,13 @@ export class HomeComponent implements OnInit {
 
   }
   ngOnInit(): void {
-    alert('Back-End hospedado na fly.io com serviço gratuito, aguarde de 2-5 segundos para inicializar o serviço.')
     this.servicoPromocao.listar()
       .subscribe(
         resposta => {
           console.log(resposta)
         }
       )
+    alert('Back-End hospedado na fly.io com serviço gratuito, aguarde de 2-5 segundos para inicializar o serviço.')
   }
   navegarParaBusca(ev: any) {
     this.router.navigate(['busca']);

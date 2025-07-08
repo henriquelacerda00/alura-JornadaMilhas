@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'https://jornadamilhas-backend.onrender.com/api',
-  publicUrl: 'https://jornadamilhas-backend.onrender.com/public'
+  apiUrl: 'https://api-jornada-milhas.fly.dev/api',
+  publicUrl: 'https://api-jornada-milhas.fly.dev/public'
 };

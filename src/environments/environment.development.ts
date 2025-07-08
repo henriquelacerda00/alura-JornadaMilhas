@@ -1,4 +1,4 @@
 export const environment = {
-  apiUrl: 'https://jornadamilhas-backend.onrender.com/api',
-  publicUrl: 'https://jornadamilhas-backend.onrender.com/public'
+  apiUrl: 'http://localhost:8080/api',
+  publicUrl: 'http://localhost:8080/public'
 };

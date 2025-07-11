@@ -10,7 +10,7 @@
   .selecao-idade {
     display: flex;
     justify-content: space-between;
-    
+
   }
   .selecao-categoria {
     margin-top: 32px;
@@ -23,6 +23,23 @@
     button {
       margin: 0 8px;
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .selecao-idade {
+      flex-direction: column;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .modal-actions {
+      flex-direction: column;
+      gap: 16px;
     }
   }
 }

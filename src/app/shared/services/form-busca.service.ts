@@ -130,7 +130,7 @@ export class FormBuscaService {
 
   openDialog() {
     this.dialog.open(ModalComponent, {
-      width: '50%'
+      panelClass: 'responsive-dialog'
     })
   }
 

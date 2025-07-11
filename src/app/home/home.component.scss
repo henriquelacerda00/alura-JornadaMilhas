@@ -9,5 +9,13 @@
   h2 {
     font-size: 32px;
   }
-}
 
+  @media screen and (max-width: 768px) {
+    .card-wrapper {
+      justify-content: center;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+}

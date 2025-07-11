@@ -31,7 +31,30 @@
     color: #673ab7;
   }
 
+  @media screen and (max-width: 1366px) {
+    .mat-toolbar {
+      padding: 0 64px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .mat-toolbar {
+      padding: 0 16px;
+
+      a{
+        img{
+          width: 3em;
+        }
+      }
+
+      .links-toolbar{
+
+        button{
+          font-size: 8px;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+
 }
-
-
-

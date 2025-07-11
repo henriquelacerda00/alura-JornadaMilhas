@@ -1,22 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 16px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+  margin-bottom: 40px;
 }
 
 .mat-mdc-snack-bar-label {
   background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    justify-content: center;
+  }
+}
+
+/* Estilos para o modal responsivo */
+.responsive-dialog .mdc-dialog__surface {
+  width: 600px; /* Largura padrão para desktops */
+  max-width: 90vw; /* Garante que não ultrapasse a largura da tela */
+  max-height: 90vh; /* Garante que não ultrapasse a altura da tela */
+
+  /* Ajuste para telas de celular e tablets */
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+
+  }
+}
+
+.mat-mdc-dialog-actions.modal-actions {
+  display: flex !important;
+  justify-content: center !important;
+  padding: 16px 0;
 }

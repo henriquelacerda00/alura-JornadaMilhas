@@ -35,4 +35,44 @@
             cursor: pointer;
         }
     }
+
+    @media screen and (max-width: 992px) {
+        .flex-container {
+            flex-wrap: wrap;
+        }
+
+        .drop-container, mat-form-field {
+            flex-grow: 1;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 24px;
+        }
+
+        .flex-container {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 16px;
+
+            mat-button-toggle-group {
+                width: 100%;
+                display: flex;
+
+                mat-button-toggle {
+                    flex: 1;
+                }
+            }
+        }
+
+        .drop-container {
+            max-width: none;
+        }
+
+        button[mat-icon-button] {
+            transform: rotate(90deg);
+            margin: -8px auto;
+        }
+    }
 }

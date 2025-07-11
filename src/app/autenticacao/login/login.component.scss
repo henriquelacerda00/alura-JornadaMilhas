@@ -63,4 +63,26 @@
       }
     }
   }
+
+  /* ✅ MOVA AS MEDIA QUERIES PARA AQUI */
+  @media (max-width: 992px) {
+    max-width: 80%;
+
+    .image-container {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-height: auto;
+    padding: 32px 24px;
+    margin: 0;
+
+    .login {
+      margin-top: 0;
+      width: 100%;
+      box-shadow: none;
+    }
+  }
 }

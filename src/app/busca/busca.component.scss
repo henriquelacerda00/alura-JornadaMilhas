@@ -23,3 +23,13 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+  .busca-page{
+    .conteudo{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}

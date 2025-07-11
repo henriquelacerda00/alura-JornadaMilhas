@@ -98,3 +98,20 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .passagem {
+        .conteudo-interior {
+            flex-direction: column;
+            gap: 24px;
+
+            .orcamento {
+                width: 100%;
+            }
+
+            .datas, .origem-destino {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
